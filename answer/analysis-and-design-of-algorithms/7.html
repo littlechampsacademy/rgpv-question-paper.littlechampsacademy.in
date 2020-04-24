@@ -1,0 +1,251 @@
+	<html>
+	<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <meta name="description" content="What is Hamiltonian cycle? Write an algorithm to find all Hamiltonian cycle in graph?  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <meta name="keyword" content="What is Hamiltonian cycle? Write an algorithm to find all Hamiltonian cycle in graph?  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <title>What is Hamiltonian cycle? Write an algorithm to find all Hamiltonian cycle in graph?  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes</title>
+    
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/1-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+       <div class="container">	
+	
+	
+ 
+        <a class="navbar-brand" href="../index.html">ENGINEERING NOTES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+         
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Question Answer Main Page
+			  <span class="sr-only">(current)</span>
+			  </a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+     <div class="container" >
+	
+	 <!-- Breadcrumbs start -->
+	  <div style="margin-top:5px"></div>
+	    <ol class="breadcrumb">
+			 <li><a href="../index.html">Home></a></li>
+			
+			<li><a href="../analysis-and-design-of-algorithms.1.html">Analysis & Design of Algorithms></a></li>
+			<li class="active">Q.7</li> 
+ 	  </div>
+	  <!-- Breadcrumbs End -->
+	  
+	  <div class="container" >
+	  <!-- Page Heading -->
+       <h3 class="my-4"> Analysis & Design of Algorithms</h3>
+
+
+	   <!-- Answer 2 -->
+      <div class="row">
+        <div class="col-md-4">
+          <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     
+     data-ad-slot="5193883486"></ins>
+<script>
+     
+</script>
+        </div>
+		
+        <div class="col-md-8">
+           
+		   <p class="question">
+Q.7: What is Hamiltonian cycle? Write an algorithm to find all Hamiltonian cycle in graph?   
+         </p><p class="answer"> <!-- <br> <br><img class="img-responsive" alt=" " width="80%" src = "./img/.jpg"/><br><br> -->
+		 
+Answer:
+
+
+
+
+	 
+         </p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF">Let G=(V, E) be a 
+			connected graph with n vertices. A Hamiltonian cycle is a round-trip 
+			path along n edges of G that visits every vertex once and returns to 
+			its initial or starting position. In other words if a Hamiltonian 
+			cycle begins at some vertex Vi <span style="font-family: Symbol">Î</span> 
+			G and the vertices of G are visited in the order V<sub>1</sub>, V<sub>2</sub>, 
+			......, V<sub>n+1</sub>, then the edges (V<sub>i</sub>, V<sub>i+1</sub>) 
+			are in E, 1&lt;=i&lt;n, and the Vi are different except for V<sub>i </sub>
+			and V<sub>n+1</sub>, which are equal. Hamiltonian cycle was 
+			suggested by Sir William Hamilton.</font></p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF">Fig. shows a graph G1 
+			which contains the Hamiltonian cycle 1, 2, 8, 7, 6, 5, 4, 3, 1. The 
+			graph G2 does not contain any Hamiltonian cycle.</font></p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF">There is no easy way 
+			to find whether a given graph contains a Hamiltonian cycle. We have 
+			backtracking algorithm that finds all the Hamiltonian cycles in a 
+			graph. The graph may be directed or undirected. Only distinct cycles 
+			are output.</font></p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF"><br>
+			<img class="img-responsive" alt="Hamiltonian cycle " width="35%" src = "img/7-1.jpg" /><br>
+			</font></p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF"><b>Algorithm </b>– The 
+			backtracking solution vector (X<sub>1</sub>, ...,X<sub>n</sub>) is 
+			defined so that x<sub>i</sub> represents the i<sup>th</sup> visited 
+			vertex of the proposed cycle. Now we have to find how to compute the 
+			set of possible vertices for X<sub>k</sub> if X<sub>1</sub>, ...., X<sub>k-1</sub>, 
+			have already been chosen. If k = 1 the x, can be any of the n 
+			vertices. To avoid printing the same cycle n times, we require that 
+			xy = 1. If 1 &lt;k&lt;n, then xk can be any vertex v that is distinct from 
+			X<sub>1</sub>, X<sub>2</sub>, .....,X<sub>k-1</sub> and v is 
+			connected by an edge to X<sub>k-1</sub>. Only the vertex X<sub>n</sub> 
+			be the one remaining vertex and it must be connected to both Xn-1 
+			and X1. Algorithm 1 NextValue (k) determines a possible next vertex 
+			of the proposed cycle.</font></p>
+			<p class="MsoNormal" style="line-height:150%"><b>
+			<font color="#0000FF">Algorithm 1 Generating 
+			a Next Vertex </font></b> </p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF">1. Algorithm NextValue 
+			(k)<br>
+			2. // x [1 : k-1] is a 
+			path of k – 1 distinct vertices. If <br>
+			3. ll x [k] = 0, then no vertex has as yet been assigned to x [k]. 
+			After <br>
+			4. // execution, x[k] is assigned to the next highest numbered 
+			vertex <br>
+			5. // which does not already appear in x [1 : k-1] and is connected 
+			by <br>
+			6. // an edge to x [k - 1]. Otherwise x [k] = 0. If k= n, then <br>
+			7. // in addition x [k] is connected to x [1]. <br>
+			8. {<br>
+			9. repeat <br>
+			10.{ <br>
+			11.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x[k] : = (x [k] + 1) mod (n+1); //Next vertex.<br>
+			12. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (x [k] = 0) then return; <br>
+			13.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (G[x [k – 1], x [k]] + 0) then <br>
+			14.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {// Is there an edge ? <br>
+			15.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for j := 1 to k-1 do if (x [j] = x[k]) then break;<br>
+			16.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Check for distinctness <br>
+			17.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (j = k) then // If true, then the vertex is distinct.<br>
+			18. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ((k &lt;n) or ((k = n) and G [x 
+			[n], x [1]] + 0))<br>
+			19.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then return; <br>
+			20.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+			21. } until (false); <br>
+			22. }</font></p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF">Algorithm 2 is used to 
+			find all Hamiltonian cycles. This algorithm is started by first 
+			initializing the adjacency matrix G [l: n, 1:n), then setting x [2 : 
+			n] to zero and x[1] to 1, and then executing Hamiltonian (2).</font></p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF">
+			<b>Algorithm 2 Finding 
+			All Hamiltonian Cycles </b> <br>
+			1. Algorithm Hamiltonian (k) <br>
+			2. // This algorithm uses the recursive formulation of <br>
+			3. // backtracking to find all the Hamiltonian cycles <br>
+			4. // of a graph. The graph is stored as an adjacency <br>
+			5. // matrix G[1 : n, 1:n). All cycles begin at node 1.<br>
+			6. {<br>
+			7. repeat <br>
+			8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { // Generate values for x [k].<br>
+			9.&nbsp;&nbsp; NextValue (k); // Assign a legal next value to x[k].<br>
+			10. &nbsp;if (x [k] = 0) then return;<br>
+			11. if (k = n) then write (x [1 : n]); <br>
+			12. else Hamiltonian (k+ 1); <br>
+			13. } until (False); <br>
+			14.}</font></p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF">
+			Travelling salesman 
+			problem is a problem of finding tour with minimum cost. This tour is 
+			a Hamiltonian cycle. For the simple case of a graph all of whose 
+			edge costs are similar, Hamiltonian will determine a minimum-cost 
+			tour if a tour exists. If the common edge cost is C, the cost of a 
+			tour is en as there are n edges in a Hamiltonian cycle.</font></p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF"><b>Hamiltonian Cycle&#39;s 
+			Complexity –</b> <br>
+			<br>
+			We can define Hamiltonian-cycle as a formal language as –</font></p>
+			<p class="MsoNormal" style="line-height:150%"><font color="#0000FF">HAM-CYCLE = {&lt;G&gt;: G is 
+			a Hamiltonian graph} <br>
+			<br>
+			If we use the reasonable encoding of a graph as its adjacency 
+			matrix, the number m of vertices in the graph is Ω(&radic; n), where 
+			n= |&lt;G&gt;| is the length of the encoding of G. There are m! possible 
+			permutations of the vertices, and therefore the running time is Ω 
+			(m!) = Ω (&radic;n!) = Ω (2<sup>&radic;n</sup>), which is not
+			<span style="font-family:&quot;Gulim&quot;,&quot;sans-serif&quot;">θ</span>(n<sup>k</sup>) 
+			for any constant k.</font><br>
+
+
+
+
+	 
+         	</p>
+  
+		 
+        </div>
+		
+		
+		
+      </div>
+	  
+	    <hr>
+ 
+
+        <!-- Pagination 1 Start -->
+		    <div style="margin-top:5px"></div>
+            <nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				    <li class="page-item"><a class="page-link" href="6.html">Previous</a></li>
+				
+					<li class="page-item"><a class="page-link" href="8.html">Next</a></li>
+			</ul>
+			</nav>
+			
+			 <span class="badge badge-primary badge-pill">  notes </span>
+<span class="badge badge-primary badge-pill"> For Error Please Whatsapp @9300930012 </span>
+
+	        <div style="margin-top:5px"></div>
+       <!-- Pagination End-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+       <div class="container" >
+	
+ 
+        <p class="m-0 text-center text-white">Copyright © rgpvonline.com 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../css/jquery.min.js.download"></script>
+    <script src="../css/bootstrap.bundle.min.js.download"></script>
+
+  
+
+
+<script data-ad-client="ca-pub-9018772739136775" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

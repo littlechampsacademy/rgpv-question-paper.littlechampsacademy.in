@@ -1,0 +1,252 @@
+	<html>
+	<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <meta name="description" content="Discuss the steps in mathematical analysis for recursive algorithm. Do the same for finding the factorial of a number. Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <meta name="keyword" content="Discuss the steps in mathematical analysis for recursive algorithm. Do the same for finding the factorial of a number. Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <title>Discuss the steps in mathematical analysis for recursive algorithm. Do the same for finding the factorial of a number. Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes</title>
+    
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/1-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+       <div class="container">	
+	
+	
+ 
+        <a class="navbar-brand" href="../index.html">ENGINEERING NOTES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+         
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Question Answer Main Page
+			  <span class="sr-only">(current)</span>
+			  </a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+     <div class="container" >
+	
+	 <!-- Breadcrumbs start -->
+	  <div style="margin-top:5px"></div>
+	    <ol class="breadcrumb">
+			 <li><a href="../index.html">Home></a></li>
+			
+			<li><a href="../analysis-and-design-of-algorithms.1.html">Analysis & Design of Algorithms></a></li>
+			<li class="active">Q.2</li> 
+ 	  </div>
+	  <!-- Breadcrumbs End -->
+	  
+	  <div class="container" >
+	  <!-- Page Heading -->
+       <h3 class="my-4"> Analysis & Design of Algorithms</h3>
+
+
+	   <!-- Answer 2 -->
+      <div class="row">
+        <div class="col-md-4">
+          <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     
+     data-ad-slot="5193883486"></ins>
+<script>
+     
+</script>
+        </div>
+		
+        <div class="col-md-8">
+           
+		   <p class="question">
+Q.2: Discuss the steps in mathematical analysis for recursive algorithm. Do the same for finding the factorial of a number.  
+         </p><p class="answer"> <!-- <br> <br><img class="img-responsive" alt=" " width="80%" src = "./img/.jpg"/><br><br> -->
+		 
+Answer:<br>
+MATHEMATICAL ANALYSIS FOR RECURSIVE ALGORITHMS <br><br>
+General Plan for Analyzing the Time Efficiency of Recursive Algorithms<br><br>
+1. Decide on a parameter (or parameters) indicating an input's size. <br>
+2. Identify the algorithm's basic operation. <br>
+3. Check whether the number of times the basic operation is executed can vary on different<br>
+inputs of the same size; if it can, the worst-case, average-case, and best-case efficiencies<br>
+must be investigated separately. <br>
+4. Set up a recurrence relation, with an appropriate initial condition, for the number of times<br>
+the basic operation is executed. <br>
+5. Solve the recurrence or, at least, ascertain the order of growth of its solution.</p>
+			<p class="answer"> <br>
+
+			<b>Recursive Evaluation of n!
+</b>
+
+
+
+	 
+         </p>
+			<p class="answer"> Definition: n! = 1 * 2 * ... *(n-1) * n for n 1 and 0! = 1 
+
+
+
+	 
+         </p>
+			<p class="answer"> Recursive definition of <b>n! : </b>&nbsp;F(n) = F(n-1)*n&nbsp; for n 
+			&gt;= 1 and
+F(0) = 1
+
+
+
+	 
+         </p>
+			<p class="answer"> *******************************</p>
+			<p class="answer"> ALGORITHM F(n)
+
+
+
+	 
+         </p>
+			<p class="answer"> //Computes n! recursively 
+
+
+
+	 
+         </p>
+			<p class="answer"> //Input: A nonnegative integer n 
+
+
+
+	 
+         </p>
+			<p class="answer"> //Output: The value of n! 
+
+
+
+	 
+         </p>
+			<p class="answer"> if n = 0 return 1 
+
+
+
+	 
+         </p>
+			<p class="answer"> else return F(n - 1)*n
+
+
+
+	 
+         </p>
+			<p class="answer"> *******************************</p>
+			<p class="answer"> M(n)=&nbsp; M(n − 1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			for n &gt; 0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to compute&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			to multiply<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F(n-1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F(n-1) by 
+			n</p>
+			<p class="answer"> M(n)= M(n − 1) +1&nbsp;&nbsp; for n&gt;0<br>
+			M(0) = 0</p>
+			<p class="answer"> &nbsp;</p>
+			<p class="answer"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; M(0) = 0
+
+
+
+	 
+         </p>
+			<p class="answer"> the calls stop when n=0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no multiplications when n = 0
+
+
+
+	 
+         </p>
+			<p class="answer"> M(n-1) = M(n-2) + 1;
+
+
+
+	 
+         </p>
+			<p class="answer"> M(n-2) = M(n-3)+1
+
+
+
+	 
+         </p>
+			<p class="answer"> M(n) = [M(n-2)+1] + 1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = M(n-2) + 2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = [M(n-3)+1+2] <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = M(n-3) + 3
+			<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =M(n-n) + n 
+			<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = n
+<br>
+			Overall time Complexity: O(n)
+
+
+
+	 
+         </p>
+  
+		 
+        </div>
+		
+		
+		
+      </div>
+	  
+	    <hr>
+ 
+
+        <!-- Pagination 1 Start -->
+		    <div style="margin-top:5px"></div>
+            <nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				    <li class="page-item"><a class="page-link" href="1.html">Previous</a></li>
+				
+					<li class="page-item"><a class="page-link" href="3.html">Next</a></li>
+			</ul>
+			</nav>
+			
+			 <span class="badge badge-primary badge-pill">  notes </span>
+<span class="badge badge-primary badge-pill"> For Error Please Whatsapp @9300930012 </span>
+
+	        <div style="margin-top:5px"></div>
+       <!-- Pagination End-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+       <div class="container" >
+	
+ 
+        <p class="m-0 text-center text-white">Copyright © rgpvonline.com 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../css/jquery.min.js.download"></script>
+    <script src="../css/bootstrap.bundle.min.js.download"></script>
+
+  
+
+
+<script data-ad-client="ca-pub-9018772739136775" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

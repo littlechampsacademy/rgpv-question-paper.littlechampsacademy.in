@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+<!-- rgpv-auto-page-start -->
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4760109424712580",
+          enable_page_level_ads: true
+     });
+</script>
+
+<!-- rgpv-auto-page-end -->
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7VS72B');</script>
+<!-- End Google Tag Manager -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <meta name="description" content="Explain the following implementation models for parameter passing with an example. Principle of Programming Language PPL question answer collection ">
+    <meta name="keyword" content=" Explain the following implementation models for parameter passing with an example.  Principle of Programming Language PPL question answer collection">
+    <title>PPL Q. Explain the following implementation models for parameter passing with an example. Principle of Programming Language PPL question answer collection </title>
+
+
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/1-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7VS72B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+
+    <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+       <div class="container" >	
+	
+	
+ 
+        <a class="navbar-brand" href="../../index.html">Que & Ans</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+         
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Question Answer Main Page
+			  <span class="sr-only">(current)</span>
+			  </a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+     <div class="container" >
+	
+	 <!-- Breadcrumbs start -->
+	  <div style="margin-top:5px"></div>
+	    <ol class="breadcrumb">
+			 <li><a href="../index.html">Home></a></li>
+			 <li><a href="index.html">Principle of Programming Language></a></li>
+			 <li class="active">Que </li> 
+ 	  </div>
+	  <!-- Breadcrumbs End -->
+	  
+	  <div class="container" >
+	  <!-- Page Heading -->
+      <h3 class="my-4 text-uppercase"> Principle of Programming Language </h3>
+
+
+      <!-- Answer 1 Start-->
+      <div class="row">
+        <div class="col-md-4">
+          <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     
+     data-ad-slot="5193883486"></ins>
+<script>
+     
+</script>
+        </div>
+        <div class="col-md-8">
+         
+		  
+		  <p class="question">  <!-- <br> -->
+		Q. : Explain the following implementation models for parameter passing with an example.<br>
+			  i) Pass-By-value<br>   ii) Pass-By-value-Result<br>iii) Pass-By-Reference<br> iv) Pass-By-Name <br>
+		  </p>
+          <p class="answer">
+Ans: Parameter Passing methods<br><br>
+<b>Pass-by-Value<br></b>
+When a parameter is passedby value, the value of the actual parameter is used to initialize the corresponding formal parameter, which then acts as a local variable in the subprogram, thus implementing in-mode semantics.<br><br>
+<b>Pass-by-Result<br></b>
+Pass-by-result is an implementation model for out-mode parameters. When a parameter is passed by result, no value is transmitted to the subprogram. The corresponding formal parameter acts as a local variable, but just before control is transferred back to the caller, its value is transmitted back to the caller’s actual parameter, which obviously must be a variable.<br><br>
+<b>Pass-by-Value-Result<br></b>
+Pass-by-value-result is an implementation model for inout-mode parameters in which actual values are copied. It is in effect a combination of pass-by-valueand pass-by-result. The value of the actual parameter is used to initialize the corresponding formal parameter, which then acts as a local variable. In fact, pass-by-value-result formal parameters must have local storage associated with the called subprogram. At subprogram termination, the value of the formal parameter is transmitted back to the actual parameter. Pass-by-value-result is sometimes called pass-by-copy, because the actual parameter is copied to the formal parameter at subprogram entry and then copied back at subprogram termination.<br><br>
+<b>Pass-by-Reference<br></b>
+Pass-by-reference is a second implementation model for inout-mode parameters.Rather than copying data values back and forth, however, as in pass-byvalue-result, the pass-by-reference method transmits an access path, usually just an address, to the called subprogram. This provides the access path to the cell storing the actual parameter. Thus, the called subprogram is allowed to access the actual parameter in the calling program unit. In effect, the actual parameter is shared with the called subprogram.<br>
+<br>
+<b>Pass-by-Name : </b> <br>In this method, the arguments to a function arc not evaluated before the function is called. Their identifications arc substituted directly into the function body and then left to be evaluated whenever the function encounters them. If an argument is not actually used in the function body that argument is never evaluated and if it is used several times, it is re-evaluated each time it appears. This is one of the most complex argument passing methods to implement. Effectively, each argument is as if represented by its own evaluation function reference. In the language FORTH, the variables are passed in sonic what similar fashion.<br><br>
+
+			</p>
+          
+        </div>
+      </div>
+      <!-- /.row -->
+	  
+	  <hr>
+	  <!-- Answer 1 End-->
+ 
+
+       <!-- Pagination Start -->
+		    <div style="margin-top:5px"></div>
+           
+	        <nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				<li class="page-item"><a class="page-link" href="11.html">Previous</a></li> 
+				<li class="page-item"><a class="page-link" href="13.html">Next</a></li>
+			</ul>
+			</nav>
+	 
+	         
+	 
+			<div style="margin-top:5px"></div>
+            <!-- Pagination End-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+       <div class="container" >
+	
+ 
+        <p class="m-0 text-center text-white">Copyright © a2zsubjects.com 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../css/jquery.min.js.download"></script>
+    <script src="../css/bootstrap.bundle.min.js.download"></script>
+
+  
+
+
+<script data-ad-client="ca-pub-9018772739136775" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

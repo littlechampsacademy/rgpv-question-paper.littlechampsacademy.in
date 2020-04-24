@@ -1,0 +1,158 @@
+	<html>
+	<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <meta name="description" content="Solve the recurrence relation: T(n) = 3 (n/4) + n  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <meta name="keyword" content="Solve the recurrence relation: T(n) = 3 (n/4) + n  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <title>Solve the recurrence relation: T(n) = 3 (n/4) + n  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes</title>
+    
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/1-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+       <div class="container">	
+	
+	
+ 
+        <a class="navbar-brand" href="../index.html">ENGINEERING NOTES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+         
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Question Answer Main Page
+			  <span class="sr-only">(current)</span>
+			  </a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+     <div class="container" >
+	
+	 <!-- Breadcrumbs start -->
+	  <div style="margin-top:5px"></div>
+	    <ol class="breadcrumb">
+			 <li><a href="../index.html">Home></a></li>
+			
+			<li><a href="../analysis-and-design-of-algorithms.1.html">Analysis & Design of Algorithms></a></li>
+			<li class="active">Q.9</li> 
+ 	  </div>
+	  <!-- Breadcrumbs End -->
+	  
+	  <div class="container" >
+	  <!-- Page Heading -->
+       <h3 class="my-4"> Analysis & Design of Algorithms</h3>
+
+
+	   <!-- Answer 2 -->
+      <div class="row">
+        <div class="col-md-4">
+          <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     
+     data-ad-slot="5193883486"></ins>
+<script>
+     
+</script>
+        </div>
+		
+        <div class="col-md-8">
+           
+		   <p class="question">
+Q.9: Solve the recurrence relation: T(n) = 3 (n/4) + n   
+         </p><p class="answer"> <!-- <br> <br><img class="img-responsive" alt=" " width="80%" src = "./img/.jpg"/><br><br> -->
+		 
+Answer:<br>
+Given <br>
+T(n) = 3 (n/4) + n <br>
+<br>
+But the recurrence relation should be<br><br>
+T(n) = 3T(n/4) + n We iterate is as follows -<br><br>
+T(n) = n + 3T(n/4)<br><br>
+= n + 3(n/4 + 3T(n/16)) = n + 3(n/4 + 3(n/16) + 3T(n/64))<br><br>
+= n + 3(n/4) + 9(n/16) + 27T(n/64)<br><br> where ((n/4)/4) = (n/16) and ((n/16)/4) = (n/64).<br><br>
+The ith term in the series is 3<sup>i</sup>(n/4<sup>i</sup>). The iterations hits n = 1 when (n/4<sup>i</sup>) = 1 or, equivalently, when i exceeds log<sub>4</sub>n. By continuing the iteration until this point, we discover that the summation contains a decreasing geometric series<br><br>
+T(n) <= n + 3n/4 + 9n/16 + 27n/64 + ... + 3<sup>log<sub>4</sub>n<font face="Arial"> 
+			Ɵ&nbsp;&nbsp; (1)</font></sup><br><br>
+			 <br><img class="img-responsive" alt="T(n) = 3 (n/4) + n  " width="40%" src = "img/9-1.jpg"/><br>
+			= 4n + o(n)<br>=
+O(n) 
+
+
+
+	 
+         </p>
+			<p class="answer"> Here, we concluded that 3<sup>log</sup><sub>4</sub><sup>n</sup> = n<sup>log</sup><sub>4</sub><sup>3</sup> and we have used the fact that log<sub>4</sub>3 < 1 to conclude that <br>
+			Ɵ&nbsp; n<sup>log</sup><sub>4</sub><sup>3</sup> = o(n).<br><br>
+
+
+
+	 
+         </p>
+  
+		 
+        </div>
+		
+		
+		
+      </div>
+	  
+	    <hr>
+ 
+
+        <!-- Pagination 1 Start -->
+		    <div style="margin-top:5px"></div>
+            <nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				    <li class="page-item"><a class="page-link" href="8.html">Previous</a></li>
+				
+					<li class="page-item"><a class="page-link" href="10.html">Next</a></li>
+			</ul>
+			</nav>
+			
+			 <span class="badge badge-primary badge-pill">  notes </span>
+<span class="badge badge-primary badge-pill"> For Error Please Whatsapp @9300930012 </span>
+
+	        <div style="margin-top:5px"></div>
+       <!-- Pagination End-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+       <div class="container" >
+	
+ 
+        <p class="m-0 text-center text-white">Copyright © rgpvonline.com 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../css/jquery.min.js.download"></script>
+    <script src="../css/bootstrap.bundle.min.js.download"></script>
+
+  
+
+
+<script data-ad-client="ca-pub-9018772739136775" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

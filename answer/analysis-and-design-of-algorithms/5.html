@@ -1,0 +1,159 @@
+	<html>
+	<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <meta name="description" content="Apply Warshall's algorithm to find the transitive closure of the digraph defined by the following adjacency matrix.   Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <meta name="keyword" content="Apply Warshall's algorithm to find the transitive closure of the digraph defined by the following adjacency matrix.   Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <title>Apply Warshall's algorithm to find the transitive closure of the digraph defined by the following adjacency matrix.   Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes</title>
+    
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/1-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+       <div class="container">	
+	
+	
+ 
+        <a class="navbar-brand" href="../index.html">ENGINEERING NOTES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+         
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Question Answer Main Page
+			  <span class="sr-only">(current)</span>
+			  </a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+     <div class="container" >
+	
+	 <!-- Breadcrumbs start -->
+	  <div style="margin-top:5px"></div>
+	    <ol class="breadcrumb">
+			 <li><a href="../index.html">Home></a></li>
+			
+			<li><a href="../analysis-and-design-of-algorithms.1.html">Analysis & Design of Algorithms></a></li>
+			<li class="active">Q.5</li> 
+ 	  </div>
+	  <!-- Breadcrumbs End -->
+	  
+	  <div class="container" >
+	  <!-- Page Heading -->
+       <h3 class="my-4"> Analysis & Design of Algorithms</h3>
+
+
+	   <!-- Answer 2 -->
+      <div class="row">
+        <div class="col-md-4">
+          <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     
+     data-ad-slot="5193883486"></ins>
+<script>
+     
+</script>
+        </div>
+		
+        <div class="col-md-8">
+           
+		   <p class="question">
+Q.5: Apply Warshall's algorithm to find the transitive closure of the digraph defined by the following adjacency matrix. 
+ <br>
+<div align=center><table class="matrix">
+        <tr>  <td>0</td>  <td>1</td>  <td>0</td>   <td>0</td>   </tr>
+		<tr>  <td>0</td>  <td>0</td>  <td>1</td>   <td>0</td>   </tr>
+		<tr>  <td>0</td>  <td>0</td>  <td>0</td>   <td>1</td>   </tr>
+		<tr>  <td>0</td>  <td>0</td>  <td>0</td>   <td>0</td>   </tr>
+        
+        </table></div>
+		</p>
+		  <p class="question">
+ i) Prove that the time efficiency of Warshall's algorithm is cubic. <br>
+<br> 
+ii) Explain why the time efficiency of Warshall's algorithm is inferior to that of the traversal based algorithm for sparse graphs represented by their adjacency lists. <br> 
+
+         </p><p class="answer"> <!-- <br> <br><img class="img-responsive" alt=" " width="80%" src = "./img/.jpg"/><br><br> -->
+		 
+Answer:<br>
+Applying Warshall's algorithm yields the following sequence of matrices
+<br><img class="img-responsive" alt=" " width="51%" src = "img/5-2.jpg" height="665"/><br><br>
+(i) For a graph with n vertices, the algorithm computes n matrices R<sup>(k)</sup> (k = 1,2, ..., n), each of which has n<sup>2</sup> elements. Hence, the total number of elements to be computed is n<sup>3</sup>. Since computing each element takes constant time, the time efficiency of the algorithm is in 
+			<font face="Arial">Ɵ</font>(n<sup>3</sup>).<br><br>
+(ii) Since one DFS or BFS traversal of a graph with n vertices and m edges, which is represented by its adjacency lists, takes 
+			<font face="Arial">Ɵ</font>(n + m) time, doing this n times takes n<font face="Arial">Ɵ</font>(n+ m) = 
+			<font face="Arial">Ɵ</font>(n<sup>2</sup>+ nm) time. For sparse graphs (i.e., if m € 
+			<font face="Arial">Ɵ</font>(n)), (n<sup>2</sup> + nm) = 
+			<font face="Arial">Ɵ</font>(n), which is more efficient than the (n<sup>3</sup>) time efficiency of Warshall's algorithm.
+
+
+	 
+         </p>
+  
+		 
+        </div>
+		
+		
+		
+      </div>
+	  
+	    <hr>
+ 
+
+        <!-- Pagination 1 Start -->
+		    <div style="margin-top:5px"></div>
+            <nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				    <li class="page-item"><a class="page-link" href="4.html">Previous</a></li>
+				
+					<li class="page-item"><a class="page-link" href="6.html">Next</a></li>
+			</ul>
+			</nav>
+			
+			 <span class="badge badge-primary badge-pill">  notes </span>
+<span class="badge badge-primary badge-pill"> For Error Please Whatsapp @9300930012 </span>
+
+	        <div style="margin-top:5px"></div>
+       <!-- Pagination End-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+       <div class="container" >
+	
+ 
+        <p class="m-0 text-center text-white">Copyright © rgpvonline.com 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../css/jquery.min.js.download"></script>
+    <script src="../css/bootstrap.bundle.min.js.download"></script>
+
+  
+
+
+<script data-ad-client="ca-pub-9018772739136775" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

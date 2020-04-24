@@ -1,0 +1,170 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <meta name="description" content="Explain the memory function method for the Knapsack problem and give the algorithm.  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <meta name="keyword" content="Explain the memory function method for the Knapsack problem and give the algorithm.  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <title>Explain the memory function method for the Knapsack problem and give the algorithm.  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/1-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+       <div class="container">	
+	
+	
+ 
+        <a class="navbar-brand" href="../index.html">ENGINEERING NOTES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+         
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Question Answer Main Page
+			  <span class="sr-only">(current)</span>
+			  </a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+     <div class="container" >
+	
+	 <!-- Breadcrumbs start -->
+	  <div style="margin-top:5px"></div>
+	    <ol class="breadcrumb">
+			 <li><a href="../index.html">Home></a></li>
+			
+			<li><a href="../analysis-and-design-of-algorithms.1.html">Analysis & Design of Algorithms></a></li>
+			<li class="active">Q.4</li> 
+ 	  </div>
+	  <!-- Breadcrumbs End -->
+	  
+	  <div class="container" >
+	  <!-- Page Heading -->
+       <h3 class="my-4"> Analysis & Design of Algorithms</h3>
+
+
+	   <!-- Answer 2 -->
+      <div class="row">
+        <div class="col-md-4">
+          <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     
+     data-ad-slot="5193883486"></ins>
+<script>
+     
+</script>
+        </div>
+		
+        <div class="col-md-8">
+           
+		   <p class="question">
+Q.4: Explain the memory function method for the Knapsack problem and give the algorithm.   
+         </p><p class="answer"> <!-- <br> <br><img class="img-responsive" alt=" " width="80%" src = "./img/.jpg"/><br><br> -->
+		 
+Answer:<br>
+
+<b>Memory Functions</b><br>
+While solving recurrence relation using dynamic programming approach common subproblems may be solved more than once and this makes inefficient solving of the problem. Hence memory function is a method that solves only necessary subproblems. Hence we can define the goal of memory function as : solve only subproblems that are necessary and solve these subproblems only once.<br><br>
+Memorization is a way to deal with overlapping subproblems in dynamic programming. During memorization -<br><br>
+1. After computing the solution to a subproblem, store it in a table.  <br>
+2. Make use of recursive calls. <br><br>
+
+ The 0-1 Knapsack Memory Function Algorithm is as given below - <br>
+
+Globally some values are to be set before the actual memory function algorithm<br>
+for (i = 1 to n) do <br>
+for (j=1 to W) do<br>
+	tablel[i,j] = -1 <br>
+for (j=0 to W) do<br>
+table[0,j]=0<br>
+//making oth row 0 <br>
+for i=1 to n do<br>
+table[i,0]=0  //making oth column 0<br>
+<br>
+Algorithm Mem_Fun knapsack(ij) <br>
+//Problem Description: Implementation of memory function method <br>
+//for the knapsack problem [/Input: i is the number of items and j denotes the knapsack's <br> //capacity <br>
+//Output: optimal solution subset <br>
+if (tablel [ i , j] < 0) then<br>
+{<br>
+if (i < w[i]) then<br>
+	value = Mem_Fun_knapsack(i-1, j) <br>
+else <br>
+	value-max(Mem_Fun_knapsack(i-1, j)<br>
+	v[i] + Mem_Fun_knapsack(i-1, j - w[i])) <br>
+	tablel[i,j]=value<br>
+	}<br>
+return table[i,j]<br>
+
+
+
+
+	 
+         </p>
+  
+		 
+        </div>
+		
+		
+		
+      </div>
+	  
+	    <hr>
+ 
+
+        <!-- Pagination 1 Start -->
+		    <div style="margin-top:5px"></div>
+            <nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				    <li class="page-item"><a class="page-link" href="3.html">Previous</a></li>
+				
+					<li class="page-item"><a class="page-link" href="5.html">Next</a></li>
+			</ul>
+			</nav>
+			
+			 <span class="badge badge-primary badge-pill">  notes </span>
+<span class="badge badge-primary badge-pill"> For Error Please Whatsapp @9300930012 </span>
+
+	        <div style="margin-top:5px"></div>
+       <!-- Pagination End-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+       <div class="container" >
+	
+ 
+        <p class="m-0 text-center text-white">Copyright © rgpvonline.com 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../css/jquery.min.js.download"></script>
+    <script src="../css/bootstrap.bundle.min.js.download"></script>
+
+  
+
+
+<script data-ad-client="ca-pub-9018772739136775" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

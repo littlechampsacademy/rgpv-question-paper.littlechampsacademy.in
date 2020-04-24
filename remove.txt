@@ -1,0 +1,43 @@
+<ul><li><a href="http://www.csvtuonline.com">CSVTU</a></li></ul> 
+<ul><li><a href="http://www.rtmnuonline.com">RTMNU</a></li></ul> 
+<ul><li><a href="http://www.gujaratstudy.com">GTU</a></li></ul> 
+<ul><li><a href="http://www.rtuonline.com">RTU</a></li></ul> 
+<ul><li><a href="http://www.bputonline.com">BPUT</a></li></ul> 
+<ul><li><a href="http://www.makaut.com">MAKAUT</a></li></ul> 
+<ul><li><a href="http://www.muadda.com">MUMBAI</a></li></ul> 
+<ul><li><a href="http://www.aktuonline.com">AKTU</a></li></ul> 
+<ul><li><a href="http://www.dtuonline.com">DTU</a></li></ul>
+<ul><li><a href="http://www.jntuonline.com">JNTU</a></li></ul>
+<ul><li><a href="http://www.akubihar.com">AKU</a></li></ul>
+<dt><a target="_self"  href="http://www.a2zsubjects.com/gate.html">GATE</a></dt> 
+<dt><a target="_self"  href="http://www.a2zsubjects.com/net.html">NET</a></dt> 
+<dt><a target="_self"  href="http://www.onlinesir.com">Objective Question</a></dt>
+http://www.rgpvonline.com
+http://www.ray-india.com/
+Ray-Solutions
+Ray Solutions
+<ins class="adsbygoogle"
+style="display:inline-block;width:200px;height:90px"
+data-ad-client="ca-pub-4760109424712580"
+data-ad-slot="9591834553"></ins>
+(adsbygoogle = window.adsbygoogle || []).push({});
+style="display:inline-block;width:336px;height:280px"
+data-ad-slot="8130703755"></ins>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-42141585-1', 'auto');
+ ga('send', 'pageview');
+ 
+<li><a href="http://www.akubihar.com">AKU</a></li> 
+<li><a href="http://www.makaut.com">WBTU</a></li> 
+<li><a href="http://www.onlineanna.com">ANNA</a></li> 
+<li><a href="http://www.jntuonline.com">JNTU</a></li> 
+<li><a href="http://www.onlinegtu.com">GTU </a></li> 
+<li><a href="http://www.uptuonline.com">UPTU</a></li> 
+<li><a href="http://www.dtuonline.com">DTU </a></li> 
+<li><a href="http://www.rtmnuonline.com"> RTMNU</a></li> 
+<li><a href="index.html">RGPV</a></li> 
+<li><a href="http://www.muadda.com">Mumbai University</a></li> 
+<li><a href="http://www.vtuonline.com">VTU</a></li> 

@@ -1,0 +1,190 @@
+	<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+	<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <meta name="description" content="Write short notes on: Master's Theorem  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+    <meta name="keyword" content="Write short notes on: Master's Theorem  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes">
+
+    <title>Write short notes on: Master's Theorem  Answer :... Analysis And Design of Algorithms ADA Question Answer Collection & Notes</title>
+    
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/1-col-portfolio.css" rel="stylesheet">
+
+  	</head>
+
+  <body>
+
+      <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+       <div class="container">	
+	
+	
+ 
+        <a class="navbar-brand" href="../index.html">ENGINEERING NOTES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+         
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Question Answer Main Page
+			  <span class="sr-only">(current)</span>
+			  </a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+     <div class="container" >
+	
+	 <!-- Breadcrumbs start -->
+	  <div style="margin-top:5px"></div>
+	    <ol class="breadcrumb">
+			 <li><a href="../index.html">Home></a></li>
+			
+			<li><a href="../analysis-and-design-of-algorithms.1.html">Analysis & Design of Algorithms></a></li>
+			<li class="active">Q.12</li> 
+ 	  </div>
+	  <!-- Breadcrumbs End -->
+	  
+	  <div class="container" >
+	  <!-- Page Heading -->
+       <h3 class="my-4"> Analysis & Design of Algorithms</h3>
+
+
+	   <!-- Answer 2 -->
+      <div class="row">
+        <div class="col-md-4">
+          <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     
+     data-ad-slot="5193883486"></ins>
+<script>
+     
+</script>
+        </div>
+		
+        <div class="col-md-8">
+           
+		   <p class="question">
+Q.12: Write short notes on: Master's Theorem   
+         </p><p class="answer"> <!-- <br> <br><img class="img-responsive" alt=" " width="80%" src = "./img/.jpg"/><br><br> -->
+		 
+Answer:</p>
+			<p class="MsoNormal"><b><span>Master Method:</span></b><span><br>
+			Master Method is a direct way to get the solution. The master method 
+			works only for following type of recurrences or for recurrences that 
+			can be transformed to following type.</span></p>
+			<p class="MsoNormal"><span>T(n) = aT(n/b) + f(n) where a &gt;= 1 and b 
+			&gt; 1</span></p>
+			<p class="MsoNormal"><span>There are following three cases:<br>
+			</span><b><span>1.</span></b><span>&nbsp;If f(n) = Θ(n</span><sup><span>c</span></sup><span>) 
+			where c &lt; Log</span><sub><span>b</span></sub><span>a then T(n) = Θ(n</span><sup><span>Log</span></sup><sub><span>b</span></sub><span>a)</span></p>
+			<p class="MsoNormal"><b><span>2.</span></b><span>&nbsp;If f(n) = Θ(n</span><sup><span>c</span></sup><span>) 
+			where c = Log</span><sub><span>b</span></sub><span>a then T(n) = Θ(n</span><sup><span>c</span></sup><span>Log 
+			n)</span></p>
+			<p class="MsoNormal"><b><span>3.</span></b><span>If f(n) = Θ(n</span><sup><span>c</span></sup><span>) 
+			where c &gt; Log</span><sub><span>b</span></sub><span>a then T(n) = 
+			Θ(f(n))</span></p>
+			<p class="MsoNormal"><b><span>How does this work?</span></b><span><br>
+			Master method is mainly derived from recurrence tree method. If we 
+			draw recurrence tree of T(n) = aT(n/b) + f(n), we can see that the 
+			work done at root is f(n) and work done at all leaves is Θ(n</span><sup><span>c</span></sup><span>) 
+			where c is Log</span><sub><span>b</span></sub><span>a. And the 
+			height of recurrence tree is Log</span><sub><span>b</span></sub><span>n</span></p>
+			 <img border=0 width=533 height=352 src="img/12-1.jpg" alt="Master Theorem"> 
+			<p><span>In recurrence tree method, we calculate total work done. If 
+			the work done at leaves is polynomially more, then leaves are the 
+			dominant part, and our result becomes the work done at leaves (Case 
+			1). If work done at leaves and root is asymptotically same, then our 
+			result becomes height multiplied by work done at any level (Case 2). 
+			If work done at root is asymptotically more, then our result becomes 
+			work done at root (Case 3).</span></p>
+			<p><strong><span>Examples of some standard algorithms whose time 
+			complexity can be evaluated using Master Method<br>
+			</span></strong><span><br>
+			Merge Sort: T(n) = 2T(n/2) + Θ(n). It falls in case 2 as c is 1 and 
+			Log</span><sub><span>b</span></sub><span>a] is also 1. So the 
+			solution is Θ(n Logn)</span></p>
+			<p><span>Binary Search: T(n) = T(n/2) + Θ(1). It also falls in case 
+			2 as c is 0 and Log</span><sub><span>b</span></sub><span>a is also 
+			0. So the solution is Θ(Logn)</span></p>
+			<p><strong><span>Notes:</span></strong><span><br>
+			<strong>1)</strong>&nbsp;It is not necessary that a recurrence of the 
+			form T(n) = aT(n/b) + f(n) can be solved using Master Theorem. The 
+			given three cases have some gaps between them. For example, the 
+			recurrence T(n) = 2T(n/2) + n/Logn cannot be solved using master 
+			method.</span></p>
+			<p><strong><span>2)</span></strong><span>&nbsp;Case 2 can be extended for 
+			f(n) = Θ(n</span><sup><span>c</span></sup><span>Log</span><sup><span>k</span></sup><span>n)<br>
+			If f(n) = Θ(n</span><sup><span>c</span></sup><span>Log</span><sup><span>k</span></sup><span>n) 
+			for some constant k &gt;= 0 and c = Log</span><sub><span>b</span></sub><span>a, 
+			then T(n) = Θ(n</span><sup><span>c</span></sup><span>Log</span><sup><span>k+1</span></sup><span>n)</span></p>
+			<p class="MsoNormal">&nbsp;</p>
+			<p class="answer"> <br>
+
+
+
+
+	 
+         </p>
+  
+		 
+        </div>
+		
+		
+		
+      </div>
+	  
+	    <hr>
+ 
+
+        <!-- Pagination 1 Start -->
+		    <div style="margin-top:5px"></div>
+            <nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				    <li class="page-item"><a class="page-link" href="11.html">Previous</a></li>
+				
+					<li class="page-item"><a class="page-link" href="13.html">Next</a></li>
+			</ul>
+			</nav>
+			
+			 <span class="badge badge-primary badge-pill">  notes </span>
+<span class="badge badge-primary badge-pill"> For Error Please Whatsapp @9300930012 </span>
+
+	        <div style="margin-top:5px"></div>
+       <!-- Pagination End-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+       <div class="container" >
+	
+ 
+        <p class="m-0 text-center text-white">Copyright © rgpvonline.com 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../css/jquery.min.js.download"></script>
+    <script src="../css/bootstrap.bundle.min.js.download"></script>
+
+  
+
+
+<script data-ad-client="ca-pub-9018772739136775" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

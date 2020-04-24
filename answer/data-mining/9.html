@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7VS72B');</script>
+<!-- End Google Tag Manager -->
+
+    <meta name="description" content="Explain the dynamic quantitative association rule mining for multidimensional association rules Answer... Data Mining question answer solutions collection">
+    <meta name="keyword" content="Explain the dynamic quantitative association rule mining for multidimensional association rules Answer...  Data Mining question answer solutions collection">
+    <title>Explain the dynamic quantitative association rule mining for multidimensional association rules Answer... Data Mining question answer solutions collection</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/1-col-portfolio.css" rel="stylesheet">
+</head>
+
+  <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7VS72B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+
+    <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+       <div class="container" >	
+	
+	
+ 
+        <a class="navbar-brand" href="../../index.html">Que & Ans</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+         
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Question Answer Main Page
+			  <span class="sr-only">(current)</span>
+			  </a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+     <div class="container" >
+	
+	 <!-- Breadcrumbs start -->
+	  <div style="margin-top:5px"></div>
+	    <ol class="breadcrumb">
+			 <li><a href="../index.html">Home></a></li>
+			 <li><a href="index.html">Data Mining></a></li>
+			 <li class="active">Q 9 </li> 
+ 	  </div>
+	  <!-- Breadcrumbs End -->
+	  
+	  <div class="container" >
+	  <!-- Page Heading -->
+      <h3 class="my-4 text-uppercase"> Data Mining </h3>
+
+
+      <!-- Answer 1 Start-->
+      <div class="row">
+        <div class="col-md-4">
+          <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     
+     data-ad-slot="5193883486"></ins>
+<script>
+     
+</script>
+        </div>
+        <div class="col-md-8">
+         
+		  
+		  <p class="question">  <!-- <br> --> <!-- 		 <br>  <img class="img-responsive" width="auto" src = "./img/20-1.jpg"/><br>  -->
+		Q.9 Explain the dynamic quantitative association rule mining for multidimensional association rules
+			 
+		  </p>
+          <p class="answer">
+Ans. Quantitative association rules are multidimensional association rules in which the numeric attributes are dynamically discretized. Let,<br>
+A<sub>quan1</sub> ^ A<sub>quan2</sub> → Acat<br>
+ where A<sub>quan1</sub> and A<sub>quan2</sub> are tests on quantitative attribute intervals, and Acat tests a categorical attribute from the task-relevant data. Such rules have been referred to as two-dimensional quantitative association rules.<br>
+Let's look at an approach used in a system called ARCS (Association Rule Clustering System). This approach maps pairs of quantitative attributes onto a 2-D grid for tuples. The grid is then searched for clusters of points from which the association rules are generated. The following steps are involved in ARCS.<br>
+<b>Binning </b>– Just think about how big a 2-D grid would be if we plotted age and income as axes, where each possible value of age was assigned a unique position on one axis, and similarly, each possible value of income was assigned a unique position on the other axis ! To keep grids down to a manageable size, we instead partition the ranges of quantitative attributes into intervals. These intervals are dynamic in that they may later be further combined during the mining process. The partitioning process is referred to as binning. <br>
+Three common binning strategies are as follows –<br><br>
+<b>(i) Equal-width Binning - </b>Where the interval size of each bin is the same.<br><br>
+<b>(ii) Equal-frequency Binning -</b> Where each bin has approximately the same number of tuples assigned to it.<br><br>
+<b>(iii) Clustering-based Binning – </b>Where clustering is performed on the quantitative attribute to group neighboring points into the same bin.<br><br>
+<b>Finding Frequent Predicate Sets –</b> Once the 2-D array containing the count distribution for each category is set up, it can be scanned to find the frequent predicate sets that also satisfy minimum confidence. Strong association rules can then be generated from these predicate sets, using a rule generation algorithm.<br>
+<b>Clustering the Association Rules –</b> Let's look at an example of a 2-D quantitative association rule is, <br><br>
+age(X, “30....39") ^ income(X, “42K.....48K”) = buys(X, “HDTV) <br>
+Fig.b shows a 2-D grid for 2-D quantitative association rules predicting the condition buys (X, “HDTV”) on the rule right-hand side, given the quantitative attributes age and income. The four Xs correspond to the rules.<br><br>
+age(X, 34) ^ income(X, “31K.....40K") = buys(X, “HDTV'') <br>
+age(X, 35) ^ income(X, “31K......40K”) = buys(X, “HDTV) <br>
+age(X, 34) ^ income(X, “41K.....50K") = buys(X, “HDTV) <br>
+age(X, 35) ^ income(X, “41K......50K”) = buys(X, "HDTV")<br><br>
+These rules are quite “close” to one another, forming a rule cluster on the grid. The four rules can be combined or "clustered” together to form the following simple rule, which subsumes and replaces above four rules –<br>
+age(X, “34.....35") ^ income(X, “31K......50K”) = buys(X, “HDTV")<br>
+ ARCS employs a clustering algorithm for this purpose. The algorithm scans the grid, searching for rectangular clusters of rules. In this way, bins of the quantitative attributes occurring within a rule cluster may be further combined, and hence further dynamic discretization of the quantitative attributes occurs.<br>
+ 
+
+			</p>
+          
+        </div>
+      </div>
+      <!-- /.row -->
+	  
+	  <hr>
+	  <!-- Answer 1 End-->
+ 
+
+       <!-- Pagination Start -->
+		    <div style="margin-top:5px"></div>
+           
+	        <nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				<li class="page-item"><a class="page-link" href="8.html">Previous</a></li> 
+				<li class="page-item"><a class="page-link" href="10.html">Next</a></li>
+			</ul>
+			</nav>
+	 
+	         <span class="badge badge-primary badge-pill"> If Error Please Whatsapp @9300930012 </span>
+				  <span class="badge badge-primary badge-pill">  </span>
+	 
+			<div style="margin-top:5px"></div>
+            <!-- Pagination End-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+       <div class="container" >
+	
+ 
+        <p class="m-0 text-center text-white">Copyright © a2zsubjects.com 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../css/jquery.min.js.download"></script>
+    <script src="../css/bootstrap.bundle.min.js.download"></script>
+
+  
+
+
+<script data-ad-client="ca-pub-9018772739136775" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>
